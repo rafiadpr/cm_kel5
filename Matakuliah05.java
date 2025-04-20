@@ -10,8 +10,6 @@ public class Matakuliah05 {
     }
 
     public void tampil() {
-        System.out.println("Kode Mata Kuliah: " + kodeMK);
-        System.out.println("Nama Mata Kuliah: " + namaMK);
-        System.out.println("SKS: " + sks);
+        System.out.println("Kode: " + kodeMK + " | Nama MK: " + namaMK + " | SKS: " + sks);
     }
 }
