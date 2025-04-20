@@ -6,6 +6,10 @@ public class SiakadMain {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         MahasiswaData mahasiswaData = new MahasiswaData();
+        MataKuliahData mkData = new MataKuliahData();
+        PenilaianData pData = new PenilaianData();
+        mahasiswaData.setPenilaian(pData.penilaian);
+
         int pilihan;
 
         do {
@@ -13,7 +17,7 @@ public class SiakadMain {
             System.out.println("1. Tampilkan Daftar Mahasiswa");
             System.out.println("2. Tampilkan Daftar Mata Kuliah");
             System.out.println("3. Tampilkan Data Penilaian");
-            System.out.println("4. Urutkan Mahasiwa Berdasarkan Nilai Akhir");
+            System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir");
             System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
@@ -27,10 +31,10 @@ public class SiakadMain {
                     break;
                 case 2:
                     System.out.println("Daftar Mata Kuliah:");
-                    mahasiswaData.tampilkanMatakuliah();
+                    mkData.tampilkanMatakuliah();
                     break;
                 case 3:
-                    mahasiswaData.tampilkanPenilaian();
+                    pData.tampilkanPenilaian();
                     break;
                 case 4:
                     mahasiswaData.urutkanBerdasarkanNilai();

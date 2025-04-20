@@ -1,14 +1,15 @@
 public class Penilaian {
     Mahasiswa mahasiswa;
     Matakuliah05 matakuliah;
-    int tugas, uts, uas;
+    double tugas, uts, uas, nilaiAkhir;
 
-    public Penilaian(Mahasiswa mhs, Matakuliah05 mk, int tugas, int uts, int uas) {
+    public Penilaian(Mahasiswa mhs, Matakuliah05 mk, double tugas, double uts, double uas) {
         this.mahasiswa = mhs;
         this.matakuliah = mk;
         this.tugas = tugas;
         this.uts = uts;
         this.uas = uas;
+        this.nilaiAkhir = hitungNilaiAkhir();
     }
 
     public double hitungNilaiAkhir() {
