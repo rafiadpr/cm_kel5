@@ -5,6 +5,7 @@ public class SiakadMain {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        MahasiswaData mahasiswaData = new MahasiswaData();
         int pilihan;
 
         do {
@@ -21,14 +22,23 @@ public class SiakadMain {
 
             switch (pilihan) {
                 case 1:
+                    System.out.println("Daftar Mahasiswa:");
+                    mahasiswaData.tampilkanMahasiswa();
                     break;
                 case 2:
+                    System.out.println("Daftar Mata Kuliah:");
+                    mahasiswaData.tampilkanMatakuliah();
                     break;
                 case 3:
+                    mahasiswaData.tampilkanPenilaian();
                     break;
                 case 4:
+                    mahasiswaData.urutkanBerdasarkanNilai();
                     break;
                 case 5:
+                    System.out.print("Masukkan NIM yang dicari: ");
+                    String cari = input.nextLine();
+                    mahasiswaData.cariMahasiswaByNIM(cari);
                     break;
                 case 0:
                     System.out.println("Program Selesai! Terima kasih!");
