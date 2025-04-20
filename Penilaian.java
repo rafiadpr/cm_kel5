@@ -1,9 +1,9 @@
 public class Penilaian {
     Mahasiswa mahasiswa;
-    Matakuliah05 matakuliah;
+    Matakuliah matakuliah;
     int tugas, uts, uas;
 
-    public Penilaian(Mahasiswa mhs, Matakuliah05 mk, int tugas, int uts, int uas) {
+    public Penilaian(Mahasiswa mhs, Matakuliah mk, int tugas, int uts, int uas) {
         this.mahasiswa = mhs;
         this.matakuliah = mk;
         this.tugas = tugas;
