@@ -5,6 +5,8 @@ public class SiakadMain {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        MahasiswaData mahasiswaData = new MahasiswaData();
+
         int pilihan;
 
         do {
